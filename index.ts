@@ -24,3 +24,8 @@ type SwapFirstTwo<T extends any[]> = T extends [
 ]
     ? [Start2, Start1, ...Left]
     : T;
+
+type arr = [1, 2, 3, 4, 5, 6];
+type Fn1 = ExtractStartAndEnd<arr>;
+type Fn2 = SwapStartAndEnd<arr>;
+type Fn3 = SwapFirstTwo<arr>;
